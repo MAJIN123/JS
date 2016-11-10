@@ -1,0 +1,32 @@
+<p id="demo">
+JavaScript 能改变HTML 元素内容。
+</p>
+
+<script>
+function myFunction(){
+	x=document.getElementById("demo");
+	x.innerHTML="Hello JavaScript!";
+}
+</script>
+
+<button type="button" onclick="myFunction">点击这里</button>
+
+----------------------------------------------------------
+
+<img id="myimage" onclick="changeImage()" src="/i/eg_bulboff.gif">
+
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("bulbon"))
+  {
+  element.src="/i/eg_bulboff.gif";
+  }
+else
+  {
+  element.src="/i/eg_bulbon.gif";
+  }
+}
+</script>
+---------------------------------------------------------------------
